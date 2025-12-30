@@ -148,7 +148,7 @@ const Hero = () => {
             ></div>
 
             <img
-              src="/myphoto.jpg"
+              src="/profileimg.jpg"
               alt="Profile"
               className="
         hero-img relative

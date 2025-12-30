@@ -86,13 +86,13 @@ html {
   }
 
   .hero-name span {
-    color: #1c9772;
+color: rgba(28, 151, 114, 0.6);
   }
 
   .hero-role {
     font-size: 22px;
     font-family: "Outfit", sans-serif;
-    color: #1c9772;
+    /* color: #1c9772; */
         /* color: #9ca3af !important; */
   }
 
@@ -143,7 +143,7 @@ html {
   .about-me-title {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 10px;
   }
 
   .about-para {
