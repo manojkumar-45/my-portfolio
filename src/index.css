@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "tailwindcss";
+
+.text-outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about-set {
+  font-weight: 450;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* NAVBAR */
+
+  .nav-container {
+    /* background: #000; */
+    background: transparent;
+    backdrop-filter: blur(12px);
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-sec {
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* HERO SECTION */
+
+  .hero-sec {
+    max-height: 95vh;
+    min-height: 95vh;
+  }
+
+  .hero-intro {
+    display: none;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-about {
+    padding-left: 0px;
+
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .hero-name {
+    font-size: 22px;
+    font-family: "Outfit", sans-serif;
+    
+  }
+
+  .hero-name span {
+    color: #1c9772;
+  }
+
+  .hero-role {
+    font-size: 22px;
+    font-family: "Outfit", sans-serif;
+    color: #1c9772;
+        /* color: #9ca3af !important; */
+  }
+
+  .typewritter-text {
+    display: none;
+  }
+
+  .hero-icons {
+    padding-top: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-icons a {
+    color: #9ca3af !important;
+  }
+
+  .hero-img-sec {
+    margin-left: 0px;
+  }
+
+  .hero-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* ABOUT PAGE */
+
+  .about-container {
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+
+  .about-me-sec {
+    width: 95%;
+
+    margin-top: 0px;
+  }
+
+  .about-set {
+    margin-bottom: 12px;
+  }
+
+  .about-me-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .about-para {
+    font-size: 16px;
+  }
+
+  .about-stats {
+    max-width: 95%;
+    margin-bottom: 12px;
+  }
+
+  .about-stats h3 {
+    font-size: 24px;
+  }
+  .about-stats p {
+    font-size: 14px;
+  }
+
+  .ex-title {
+    font-size: 1.3rem;
+  }
+
+  .intern-sec {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .about-highlights {
+    font-weight: 600;
+  }
+
+  /* PROJECTS PAGE */
+
+  .projects-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .projects-box {
+    gap: 20px;
+  }
+
+  .project-card {
+    max-width: 95%;
+  }
+
+  .project-desc {
+    margin-bottom: 0px;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact-sec {
+    max-width: 330px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-cards {
+    max-width: 330px;
+    min-width: 320px;
+  }
+
+  .mail-icon,
+  .phone-icon {
+    margin-top: 10px;
+  }
+
+  .contact-send-btn {
+    padding: 14px;
+    max-width: 190px;
+  }
+
+  .about-left-spec {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+}
