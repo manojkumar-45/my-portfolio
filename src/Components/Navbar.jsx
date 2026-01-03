@@ -15,7 +15,12 @@ const Navbar = () => {
   return (
     <nav className="nav-container fixed top-0 left-0 w-full z-50 backdrop-blur-md">
       <div className="nav-sec  max-w-7xl mx-auto  px-6 h-18 grid grid-cols-3 items-center">
-        <div className="logo text-[#1c9772] text-outfit-regular text-3xl font-bold tracking-wide">
+        <div
+          className="logo inline-block text-outfit-regular text-3xl font-bold tracking-wide
+    bg-gradient-to-r from-[#34d399] via-[#5eead4] to-[#d1fae5]
+    bg-clip-text text-transparent
+    "
+        >
           Manoj Kumar V
         </div>
 
@@ -64,12 +69,13 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="
-      px-3 py-[8px] rounded-full
-      bg-[#1c9772]/60
-      text-white text-lg text-outfit-regular font-bold
-      hover:scale-105 transition-transform
-      shadow-md
-      inline-block
+       px-6 py-2 rounded-full
+      bg-gradient-to-r from-[#34d399] via-[#5eead4] to-[#d1fae5]
+      text-[#0b1f1a] font-semibold
+      shadow-[0_2px_10px_rgba(52,211,153,0.25)]
+      transition-all duration-300
+      hover:scale-105
+      hover:shadow-[0_6px_10px_rgba(52,211,153,0.45)]
     "
           >
             Connect with Me
@@ -79,7 +85,9 @@ const Navbar = () => {
         <div className="md:hidden flex justify-end">
           <button
             onClick={() => setOpen(!open)}
-            className="text-[#1c9772] text-3xl"
+            className="text-3xl text-[#34d399]
+             drop-shadow-[0_0_1px_#5eead4]
+             drop-shadow-[0_0_15px_#d1fae5] text-3xl"
           >
             {open ? <FiX /> : <FiMenu />}
           </button>
@@ -119,8 +127,8 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="
                   px-6 py-2 rounded-full
-               bg-[#1c9772]/60 
-                  text-white font-semibold
+              bg-gradient-to-r from-[#34d399] via-[#5eead4] to-[#d1fae5] 
+                  text-black font-semibold
                   shadow-md
                 "
               >
@@ -135,3 +143,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

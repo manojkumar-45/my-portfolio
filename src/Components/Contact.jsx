@@ -104,7 +104,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/manojkumar017 "
             target="_blank"
             rel="noreferrer"
-            className="text-[#1c9772] text-3xl sm:text-3xl hover:text-white transition transform hover:scale-110"
+            className="text-[#1c9772] text-4xl sm:text-4xl hover:text-white transition transform hover:scale-110"
           >
             <FaLinkedin />
           </a>
@@ -113,7 +113,7 @@ const Contact = () => {
             href="https://github.com/manojkumar-45"
             target="_blank"
             rel="noreferrer"
-            className="text-[#1c9772] text-3xl sm:text-3xl hover:text-white transition transform hover:scale-110"
+            className="text-[#1c9772] text-4xl sm:text-4xl hover:text-white transition transform hover:scale-110"
           >
             <FaGithub />
           </a>

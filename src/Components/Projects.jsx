@@ -35,7 +35,12 @@ const Projects = () => {
       title: "Delicious – Responsive Food Delivery Web Application",
       desc: "Delicious is a modern food delivery application where users can browse items, manage their cart, and place orders.",
       image: "/delicious.png",
-      tech: [SiReact, SiTailwindcss, SiSpringboot, SiMysql],
+      tech: [
+        { Icon: SiReact, color: "text-cyan-400" },
+        { Icon: SiTailwindcss, color: "text-sky-400" },
+        { Icon: SiSpringboot, color: "text-green-400" },
+        { Icon: SiMysql, color: "text-blue-500" },
+      ],
       live: true,
       liveUrl: "https://delicious-food-delivery-app.netlify.app/",
       githubUrl: null,
@@ -44,16 +49,25 @@ const Projects = () => {
       title: "QuickCart – Modern eCommerce Platform with Responsive UI",
       desc: "QuickCart is offering a fast, intuitive shopping experience with login authentication, cart items, and secure ordering.",
       image: "/quickcart.png",
-      tech: [SiReact, SiSpringboot, SiMysql, SiTailwindcss],
+      tech: [
+        { Icon: SiReact, color: "text-cyan-400" },
+        { Icon: SiSpringboot, color: "text-green-500" },
+        { Icon: SiMysql, color: "text-blue-500" },
+        { Icon: SiTailwindcss, color: "text-sky-400" },
+      ],
       live: false,
       githubUrl: "https://github.com/manojkumar-45/quickcart-fullstack.git",
     },
-
     {
       title: "WorkSphere – JWT based EMS Secure Web Application",
       desc: "WorkSphere is a secure EMS platform offering secure handling with CRUD functionality through a clean interface.",
       image: "/ems.png",
-      tech: [SiReact, SiTailwindcss, SiSpringboot, SiMysql],
+      tech: [
+        { Icon: SiReact, color: "text-cyan-400" },
+        { Icon: SiTailwindcss, color: "text-sky-400" },
+        { Icon: SiSpringboot, color: "text-green-500" },
+        { Icon: SiMysql, color: "text-blue-500" },
+      ],
       live: false,
       githubUrl:
         "https://github.com/manojkumar-45/worksphere-employee-management.git",
@@ -63,27 +77,27 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="projects-box w-full  min-h-screen  text-gray-100 flex flex-col justify-center items-center px-4 md:px-6"
+      className="projects-box w-full min-h-screen text-gray-100 flex flex-col justify-center items-center px-4 md:px-6"
     >
-      <h2 className="projects-title text-3xl md:text-4xl font-bold text-outfit-regular text-center mb-10 md:mb-10">
+      <h2 className="projects-title text-3xl md:text-4xl font-bold text-outfit-regular text-center mb-10">
         Featured{" "}
         <span className="text-[#1c9772] font-bold text-outfit-regular">
           Projects
         </span>
       </h2>
 
-      <div className="projects-box grid grid-cols-1 place-items-center sm:grid-cols-2  lg:grid-cols-3 gap-8 md:gap-6 w-full max-w-6xl">
+      <div className="projects-box grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6 w-full max-w-6xl">
         {projects.map((proj, idx) => (
           <div
             key={idx}
             className="
-  project-card group relative rounded-2xl overflow-hidden
-  bg-white/5 backdrop-blur-xl
-  border border-white/10
-  hover:border-[#1c9772]/60
-  hover:shadow-[0_0_35px_rgba(28,151,114,0.35)]
-  transition-all duration-500
-"
+              project-card group relative rounded-2xl overflow-hidden
+              bg-white/5 backdrop-blur-xl
+              border border-white/10
+              hover:border-[#1c9772]/60
+              hover:shadow-[0_0_35px_rgba(28,151,114,0.35)]
+              transition-all duration-500
+            "
           >
             <div className="relative h-40 md:h-45 overflow-hidden">
               <img
@@ -97,18 +111,19 @@ const Projects = () => {
             </div>
 
             <div className="p-2 md:p-3 space-y-0 md:space-y-2">
-              <h3 className="text-base  md:text-md font-semibold text-white ">
+              <h3 className="text-base md:text-md font-semibold text-white">
                 {proj.title}
               </h3>
 
-              <p className=" project-desc text-sm md:text-[13px] mb-3 text-gray-400 leading-snug md:leading-relaxed">
+              <p className="project-desc text-sm md:text-[13px] mb-3 text-gray-400 leading-snug md:leading-relaxed">
                 {proj.desc}
               </p>
 
+              {/* Mobile */}
               <div className="flex items-center justify-between md:hidden pt-1">
-                <div className="flex gap-2  text-[#1c9772] text-base">
-                  {proj.tech.map((Icon, i) => (
-                    <Icon key={i} />
+                <div className="flex gap-2 text-base">
+                  {proj.tech.map(({ Icon, color }, i) => (
+                    <Icon key={i} className={color} />
                   ))}
                 </div>
 
@@ -117,6 +132,7 @@ const Projects = () => {
                     <a
                       href={proj.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[13px] px-2 py-2 rounded-md bg-[#1c9772]/25 text-[#1c9772]"
                     >
                       <FaGithub />
@@ -127,6 +143,7 @@ const Projects = () => {
                     <a
                       href={proj.liveUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[13px] px-2 py-2 rounded-md bg-white/15"
                     >
                       <FaExternalLinkAlt />
@@ -135,9 +152,10 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="hidden md:flex items-center gap-3 text-lg text-[#1c9772] ">
-                {proj.tech.map((Icon, i) => (
-                  <Icon key={i} />
+              {/* Desktop */}
+              <div className="hidden md:flex items-center gap-3 text-lg">
+                {proj.tech.map(({ Icon, color }, i) => (
+                  <Icon key={i} className={color} />
                 ))}
               </div>
             </div>
@@ -155,6 +173,7 @@ const Projects = () => {
                 <a
                   href={proj.githubUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-1 text-sm px-[10px] py-[6px] rounded-full
                     bg-[#1c9772]/25 text-[#1c9772] hover:bg-[#1c9772]/40"
                 >
@@ -166,6 +185,7 @@ const Projects = () => {
                 <a
                   href={proj.liveUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm px-[10px] py-[6px] rounded-full
                     bg-white/15 hover:bg-white/25"
                 >
