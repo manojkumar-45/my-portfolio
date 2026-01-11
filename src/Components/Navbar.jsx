@@ -69,7 +69,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="
-       px-6 py-2 rounded-full
+       dsk-nav-btn px-6 py-2 rounded-full
       bg-gradient-to-r from-[#34d399] via-[#5eead4] to-[#d1fae5]
       text-[#0b1f1a] font-semibold
       shadow-[0_2px_10px_rgba(52,211,153,0.25)]
@@ -143,4 +143,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

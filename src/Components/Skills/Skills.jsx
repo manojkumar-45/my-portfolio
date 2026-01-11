@@ -9,7 +9,6 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 
-
 import {
   SiPython,
   SiMongodb,
@@ -36,12 +35,12 @@ const skillsData = {
       cols: 3,
       centerContent: true,
       items: [
-        { name: "Java", icon: <FaJava className="text-red-500" /> },
+        { name: "Java", icon: <FaJava className="text-[#1c9772]" /> },
         {
           name: "JavaScript",
-          icon: <SiJavascript className="text-yellow-400" />,
+          icon: <SiJavascript className="text-[#1c9772]" />,
         },
-        { name: "Python", icon: <SiPython className="text-blue-400" /> },
+        { name: "Python", icon: <SiPython className="text-[#1c9772]" /> },
       ],
     },
     {
@@ -49,8 +48,8 @@ const skillsData = {
       cols: 2,
       centerContent: true,
       items: [
-        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
-        { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-[#1c9772]" /> },
+        { name: "MongoDB", icon: <SiMongodb className="text-[#1c9772]" /> },
       ],
     },
   ],
@@ -60,34 +59,49 @@ const skillsData = {
       title: "Frontend",
       cols: 3,
       items: [
-        { name: "React", icon: <FaReact className="text-cyan-400" /> },
-  { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
-  { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
-  { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
-  { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" /> },
-  { name: "Framer Motion", icon: <SiFramer className="text-pink-500" /> },
-  {
-    name: "GSAP",
-    icon: (
-      <span className="text-green-300 font-bold text-lg tracking-wide">
-        GSAP
-      </span>
-    ),
-  },
-  { name: "Three.js", icon: <TbBrandThreejs className="text-white/80" /> },
-  { name: "React Bits", icon: <FaReact className="text-cyan-300 opacity-80" /> },
+        { name: "React", icon: <FaReact className="text-[#1c9772]" /> },
+        { name: "HTML5", icon: <SiHtml5 className="text-[#1c9772]" /> },
+        { name: "CSS3", icon: <SiCss3 className="text-[#1c9772]" /> },
+        {
+          name: "Tailwind",
+          icon: <SiTailwindcss className="text-[#1c9772]" />,
+        },
+        { name: "Bootstrap", icon: <SiBootstrap className="text-[#1c9772]" /> },
+        {
+          name: "Framer Motion",
+          icon: <SiFramer className="text-[#1c9772]" />,
+        },
+        {
+          name: "GSAP",
+          icon: (
+            <span className="gsap-skill-icon text-[#1c9772] font-bold text-lg tracking-wide">
+              GSAP
+            </span>
+          ),
+        },
+        {
+          name: "Three.js",
+          icon: <TbBrandThreejs className="text-[#1c9772]" />,
+        },
+        {
+          name: "React Bits",
+          icon: <FaReact className="text-[#1c9772] opacity-80" />,
+        },
       ],
     },
     {
       title: "Tools",
       cols: 3,
       items: [
-        { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-  { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
-  { name: "Postman", icon: <SiPostman className="text-orange-400" /> },
-  { name: "IntelliJ", icon: <SiIntellijidea className="text-red-500" /> },
-  { name: "Eclipse", icon: <SiEclipseide className="text-purple-500" /> },
-  { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
+        { name: "Git", icon: <FaGitAlt className="text-[#1c9772]" /> },
+        { name: "Docker", icon: <FaDocker className="text-[#1c9772]" /> },
+        { name: "Postman", icon: <SiPostman className="text-[#1c9772]" /> },
+        {
+          name: "IntelliJ",
+          icon: <SiIntellijidea className="text-[#1c9772]" />,
+        },
+        { name: "Eclipse", icon: <SiEclipseide className="text-[#1c9772]" /> },
+        { name: "Firebase", icon: <SiFirebase className="text-[#1c9772]" /> },
       ],
     },
   ],
@@ -97,18 +111,24 @@ const skillsData = {
       title: "Backend",
       cols: 3,
       items: [
-         { name: "Spring", icon: <SiSpring className="text-green-500" /> },
-  { name: "Spring Boot", icon: <SiSpring className="text-green-500" /> },
-  { name: "REST APIs", icon: <TbApi  className="text-blue-300 text-4xl"  /> },
+        { name: "Spring", icon: <SiSpring className="text-[#1c9772]" /> },
+        { name: "Spring Boot", icon: <SiSpring className="text-[#1c9772]" /> },
+        {
+          name: "REST APIs",
+          icon: <TbApi className="api-icon text-[#1c9772] text-4xl" />,
+        },
       ],
     },
     {
       title: "Platforms & Cloud",
       cols: 3,
       items: [
-         { name: "Google Cloud", icon: <SiGooglecloud className="text-blue-400" /> },
-  { name: "VS Code", icon: <VscCode className="text-blue-500" /> },
-  { name: "GitHub", icon: <FaGithub className="text-white" /> },
+        {
+          name: "Google Cloud",
+          icon: <SiGooglecloud className="text-[#1c9772]" />,
+        },
+        { name: "VS Code", icon: <VscCode className="text-[#1c9772]" /> },
+        { name: "GitHub", icon: <FaGithub className="text-[#1c9772]" /> },
       ],
     },
   ],

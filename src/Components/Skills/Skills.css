@@ -31,7 +31,7 @@
 
 .skill-box {
   background: rgba(255, 255, 255, 0.04);
-  padding: 12px;
+  padding: 15px;
   border-radius: 12px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .skill-icon {
-  font-size: 2rem;
+  font-size: 1.9rem;
   transition: transform 0.2s ease;
   color: #1c9772;
 }
@@ -93,6 +93,10 @@
 
   .frontend-box .skill-item:nth-child(n + 7) {
     display: none;
+  }
+
+  .icon-grid {
+    row-gap: 10px !important;
   }
 
   .skills-title {
@@ -149,5 +153,67 @@
 
   .skills-col {
     gap: 15px;
+  }
+}
+
+/* ================================
+   DESKTOP LARGE SCREENS (1920x1080+)
+   ================================ */
+@media (min-width: 1920px) {
+  .skills-section {
+    padding: 6rem 0;
+  }
+
+  .skills-layout {
+    max-width: 1650px;
+    margin: 0 auto;
+    gap: 4rem;
+  }
+
+  .skills-col {
+    gap: 3rem;
+  }
+
+  .skill-box {
+    padding: 1.7rem 2.5rem;
+    border-radius: 22px;
+  }
+
+  .skills-title {
+    font-size: 3.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .skill-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .icon-grid {
+    gap: 1.3rem;
+  }
+
+  .skill-item {
+    gap: 0.7rem;
+  }
+
+  .skill-icon {
+    font-size: 3rem;
+  }
+
+  .api-icon {
+    font-size: 3.5rem;
+  }
+
+  .gsap-skill-icon {
+    font-size: 1.7rem;
+  }
+
+  .skill-name {
+    font-size: 1.2rem !important;
+  }
+
+  .frontend-box {
+    transform: scale(1.05);
   }
 }

@@ -15,7 +15,6 @@
   font-style: normal;
 }
 
-
 @keyframes borderShiftSoft {
   0% {
     background-position: 0% 50%;
@@ -146,6 +145,9 @@ html {
     height: 170px;
   }
 
+  .borderbox {
+    background: linear-gradient(to right, #34d399, #5eead4);
+  }
   /* ABOUT PAGE */
 
   .about-container {
@@ -248,28 +250,19 @@ html {
   }
 }
 
-@media (max-width: 480px) {
-}
-
-
-
-
-
 /* =====================================
    NAVBAR – LARGE DESKTOP ONLY (1920px+)
 ===================================== */
 @media (min-width: 1920px) {
-
   .nav-sec {
-    max-width: 1800px;
-    height: 96px;          
+    max-width: 100%;
+    height: 96px;
     padding-left: 80px;
     padding-right: 80px;
   }
 
-
   .logo {
-    font-size: 45px;
+    font-size: 3.3rem;
     letter-spacing: 1px;
   }
 
@@ -279,9 +272,9 @@ html {
   }
 
   .nav-center ul a {
-    font-size: 20px;
-    padding: 10px 26px;
-    max-height: none;         
+    font-size: 26px;
+    padding: 10px 24px;
+    max-height: none;
   }
 
   .nav-sec a {
@@ -289,21 +282,23 @@ html {
     padding: 14px 40px;
   }
 
-
+  .dsk-nav-btn {
+    font-size: 1.5rem !important;
+    padding: 16px 44px !important;
+  }
 
   /* HERO SECTION */
 
-.hero-sec{
-   margin: auto;
-}
+  .hero-sec {
+    margin: auto;
+  }
 
   .hero-container {
-    max-width: 1800px;    
-   
+    max-width: 1800px;
+
     padding-left: 100px;
     padding-right: 100px;
   }
-
 
   .hero-about {
     padding-left: 70px;
@@ -311,7 +306,7 @@ html {
   }
 
   .hero-name {
-    font-size: 70px;        
+    font-size: 75px;
     line-height: 1.15;
   }
 
@@ -320,31 +315,30 @@ html {
     margin-top: 10px;
   }
 
- 
   .hero-intro {
-    font-size: 23px;
+    font-size: 26px;
     max-width: 650px;
     line-height: 1.3;
   }
 
-
   .hero-icons {
     margin-top: 16px;
-    gap: 22px;
+    gap: 24px;
   }
 
   .hero-icons a {
-    font-size: 35px;
+    font-size: 38px;
   }
 
-.hero-img-sec{
- 
-  margin-left: 150px;
-}
- 
+  .hero-img-sec {
+    margin-left: 150px;
+  }
+
   .hero-img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    max-height: 350px;
   }
 
   .hero-img-sec .glow {
@@ -352,16 +346,199 @@ html {
     opacity: 1;
   }
 
+  /* About Page */
 
+  #about > div {
+    max-width: 1700px;
+  }
 
+  .about-sec {
+    max-width: 90%;
+    min-height: 80vh;
+  }
 
+  .about-left-spec {
+    width: 100%;
+    height: 60%;
+    text-align: justify;
+  }
 
+  .about-left-spec h3 {
+    font-size: 2.1rem;
+  }
 
+  .about-left-spec p {
+    font-size: 1.6rem;
+  }
 
+  .about-me-sec {
+    width: 100%;
+    height: 100%;
+  }
 
+  .about-me-title {
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+  }
 
+  .about-me-title span {
+    font-size: 3.4rem;
+  }
 
+  .about-set {
+    max-width: 100%;
+    padding: 15px;
+  }
 
+  .about-para {
+    max-width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.85;
+  }
+
+  #about > div {
+    column-gap: 100px;
+  }
+
+  .about-stats h3 {
+    font-size: 3rem;
+  }
+
+  .about-stats p {
+    font-size: 1.5rem;
+  }
+
+  .intern-sec {
+    max-width: 100%;
+  }
+
+  .intern-sec p {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .intern-sec h3 {
+    font-size: 2rem;
+  }
+
+  .intern-sec p {
+    font-size: 1.5rem;
+  }
+
+  .projects-title {
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .projects-box.grid {
+    max-width: 1650px;
+    gap: 3.5rem;
+  }
+
+  .project-card {
+    border-radius: 26px;
+    transform: scale(1.03);
+  }
+
+  .project-image-div {
+    height: 250px;
+  }
+
+  .project-card img {
+    max-height: 350px;
+  }
+
+  .project-card .p-2,
+  .project-card .md\:p-3 {
+    padding: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .project-desc {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .project-card .hidden.md\:flex.text-lg {
+    font-size: 1.7rem;
+    gap: 1rem;
+  }
+
+  .project-card a {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 0 55px rgba(28, 151, 114, 0.45);
+  }
+
+  .social-dsk-icons a {
+    padding-left: 15px;
+    font-size: 1.4rem;
+    padding-right: 15px;
+  }
+
+  /* Contact Page */
+
+  #contact {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .contact-sec {
+    max-width: 1300px;
+  }
+
+  .contact-title {
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #contact p {
+    font-size: 1.5rem;
+    line-height: 1.75;
+  }
+
+  .contact-cards {
+    max-width: 1100px;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-cards a {
+    padding: 2.2rem;
+    border-radius: 26px;
+  }
+
+  .contact-cards svg {
+    font-size: 2.8rem;
+  }
+
+  .contact-cards p {
+    font-size: 1.7rem !important;
+  }
+
+  #contact .text-4xl {
+    font-size: 3.5rem;
+  }
+
+  #contact .flex.justify-center {
+    gap: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .contact-send-btn {
+    font-size: 1.8rem;
+    padding: 1rem 2.6rem;
+    border-radius: 18px;
+  }
+
+  .contact-cards a:hover {
+    box-shadow: 0 0 45px rgba(28, 151, 114, 0.35);
+  }
 }
-
-

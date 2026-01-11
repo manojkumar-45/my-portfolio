@@ -36,10 +36,10 @@ const Projects = () => {
       desc: "Delicious is a modern food delivery application where users can browse items, manage their cart, and place orders.",
       image: "/delicious.png",
       tech: [
-        { Icon: SiReact, color: "text-cyan-400" },
-        { Icon: SiTailwindcss, color: "text-sky-400" },
-        { Icon: SiSpringboot, color: "text-green-400" },
-        { Icon: SiMysql, color: "text-blue-500" },
+        { Icon: SiReact, color: "text-[#1c9772]" },
+        { Icon: SiTailwindcss, color: "text-[#1c9772]" },
+        { Icon: SiSpringboot, color: "text-[#1c9772]" },
+        { Icon: SiMysql, color: "text-[#1c9772]" },
       ],
       live: true,
       liveUrl: "https://delicious-food-delivery-app.netlify.app/",
@@ -50,10 +50,10 @@ const Projects = () => {
       desc: "QuickCart is offering a fast, intuitive shopping experience with login authentication, cart items, and secure ordering.",
       image: "/quickcart.png",
       tech: [
-        { Icon: SiReact, color: "text-cyan-400" },
-        { Icon: SiSpringboot, color: "text-green-500" },
-        { Icon: SiMysql, color: "text-blue-500" },
-        { Icon: SiTailwindcss, color: "text-sky-400" },
+        { Icon: SiReact, color: "text-[#1c9772]" },
+        { Icon: SiSpringboot, color: "text-[#1c9772]" },
+        { Icon: SiMysql, color: "text-[#1c9772]" },
+        { Icon: SiTailwindcss, color: "text-[#1c9772]" },
       ],
       live: false,
       githubUrl: "https://github.com/manojkumar-45/quickcart-fullstack.git",
@@ -63,10 +63,10 @@ const Projects = () => {
       desc: "WorkSphere is a secure EMS platform offering secure handling with CRUD functionality through a clean interface.",
       image: "/ems.png",
       tech: [
-        { Icon: SiReact, color: "text-cyan-400" },
-        { Icon: SiTailwindcss, color: "text-sky-400" },
-        { Icon: SiSpringboot, color: "text-green-500" },
-        { Icon: SiMysql, color: "text-blue-500" },
+        { Icon: SiReact, color: "text-[#1c9772]" },
+        { Icon: SiTailwindcss, color: "text-[#1c9772]" },
+        { Icon: SiSpringboot, color: "text-[#1c9772]" },
+        { Icon: SiMysql, color: "text-[#1c9772]" },
       ],
       live: false,
       githubUrl:
@@ -99,7 +99,7 @@ const Projects = () => {
               transition-all duration-500
             "
           >
-            <div className="relative h-40 md:h-45 overflow-hidden">
+            <div className="project-image-div relative h-40 md:h-45 overflow-hidden">
               <img
                 src={proj.image}
                 alt={proj.title}
@@ -162,7 +162,7 @@ const Projects = () => {
 
             <div
               className="
-                hidden md:flex
+                social-dsk-icons hidden md:flex
                 absolute inset-0 items-end justify-end
                 pb-2 pr-3 gap-3
                 opacity-0 group-hover:opacity-100

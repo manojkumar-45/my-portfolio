@@ -28,7 +28,7 @@ const About = () => {
       id="about"
       className="about-container w-full  min-h-screen text-gray-100 flex items-center px-10"
     >
-      <div className="max-w-6xl  mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div className="about-sec max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="about-left-spec relative about-animate ">
           <div
             className="absolute  left-0 top-0 h-full w-[2px] bg-gradient-to-b 
@@ -67,7 +67,7 @@ const About = () => {
         </div>
 
         <div className="about-me-sec  mx-auto space-y-8 mt-6 ">
-          <div className="about-set about-animate ">
+          <div className="about-set  about-animate ">
             <h2 className="about-me-title text-4xl text-outfit-regular font-bold">
               About <span className="text-[#1c9772]">Me</span>
             </h2>
